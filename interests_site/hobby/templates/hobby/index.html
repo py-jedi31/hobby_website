@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Мои увлечения</title>
+  </head>
+  <body>
+    {% for hobby in hobbies %}
+      <h1>{{ hobby.title }}</h1>
+      <p>{{ hobby.content }}</p>
+    {% endfor %}
+  </body>
+</html>
