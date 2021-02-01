@@ -55,7 +55,7 @@ header:before {
 }
 
 .intro__item {
-
+    height: 390px;
     position: relative;
     background: linear-gradient(#e66465, #9198e5);
 }
