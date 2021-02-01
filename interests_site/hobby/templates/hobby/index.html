@@ -1,0 +1,47 @@
+{%  load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hobby</title>
+    <link rel="stylesheet" href="{% static 'hobby/css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+
+            <nav class="nav">
+                <ul class="topmenu">
+                    <li><a href="#" class="nav__link">Главная</a></li>
+                    <li><a href="" class="down nav__link">Мои Хобби</a>
+                        <ul class="submenu">
+                            <li><a href="#" class="nav__link">Компьютерные игры</a></li>
+                            <li><a href="#" class="nav__link">Собирание чая</a></li>
+                            <li><a href="#" class="nav__link">Программирование</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+
+
+            <div class="intro">
+               <div class="intro__item">
+                   <img src="{% static 'hobby/img/russian__hackers.jpg' %}" alt="Русские Хакеры">
+                   <div class="item__hack">Русские Хакеры</div>
+               </div>
+               <div class="intro__main">
+                <h1 class="intro__title">Lorem ipsum</h1>
+                <p1 class="intro__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi magni, delectus dicta natus non optio  distinctio, nihil praesentium, possimus iure nostrum doloremque fugit eum aperiam aspernatur! Delectus accusamus, alias ea.</p1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+</body></html>

@@ -1,0 +1,175 @@
+body {
+    font-family: 'Comic Neue', cursive;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+/*  Container  */
+.container {
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/*  Header  */
+header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+header:before {
+    content: '';
+    position: fixed;
+    z-index: -1;
+    filter: blur(13px);
+    width: 100%;
+    height: 100vh;
+
+    background: url("../img/background.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+/*  Intro  */
+.intro {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 200px;
+}
+
+.intro__item {
+    height: 390px;
+    position: relative;
+    background: linear-gradient(#e66465, #9198e5);
+}
+
+.item__hack {
+    opacity: 0;
+    font-size: 50px;
+    font-weight: 300;
+    position: absolute;
+    top: 145px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    color: #fff;
+    transition: opacity .2s linear;
+}
+
+.intro__item:hover .item__hack {
+    opacity: 1;
+}
+
+.intro__item img {
+    transition: opacity .2s linear;
+    display: block;
+}
+
+.intro__item:hover img {
+    opacity: .1;
+}
+
+.intro__main {
+    text-align: right;
+    margin-left: 100px
+}
+
+.intro__title {
+    font-size: 80px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.intro__text {
+    font-size: 40px;
+    font-weight: 400;
+    color: #fff;
+    opacity: .6;
+}
+
+/*  Nav  */
+.nav {
+    display: inline-block;
+}
+
+.nav__link:hover {
+    color: #f00;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    outline: none;
+}
+
+.topmenu {
+    backface-visibility: hidden;
+    border: none;
+}
+
+.topmenu > li {
+    display: inline-block;
+    position: relative;
+}
+
+.topmenu > li > a {
+    font-size: 30px;
+    font-weight: 300;
+    text-decoration: none;
+    color: #fafafa;
+    transition: color .2s linear;
+    margin: 10px 20px;
+}
+
+.submenu {
+    background: #fff;
+    border: 2px solid #003559;
+    position: absolute;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 5;
+    width: 200px;
+
+    transition: .2s ease-in-out;
+}
+
+.topmenu > li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+    transform: perspective(600px) rotateX(0deg);
+}
+
+.submenu li a {
+    color: #7f7f7f;
+    font-size: 15px;
+    line-height: 36px;
+    padding: 0 25px;
+    font-family: 'Kurale', serif;
+    transition: .4s ease-in-out;
+    margin: 0 auto;
+}
